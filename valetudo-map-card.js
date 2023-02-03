@@ -941,7 +941,7 @@ class ValetudoMapCard extends HTMLElement {
         #lovelaceValetudoMapCard {
           height: ${containerHeight}px;
           padding-top: ${containerMinHeightPadding}px;
-          padding-bottom: ${containerMinHeightPadding}px;
+          padding-bottom: ${containerMinHeightPadding + this._config.bottom_padding}px;
           padding-left: ${this._config.left_padding}px;
           overflow: hidden;
         }
@@ -1408,6 +1408,7 @@ const DEFAULT_CARD_CONFIG = {
 
   // Padding settings
   left_padding: 0,
+  bottom_padding: 0,
 
   // Scale settings
   map_scale: 1,
